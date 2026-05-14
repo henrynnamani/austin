@@ -8,7 +8,124 @@
 
 # Typecasting - DONE
 
-# Operators
+# Operators - NOT DONE
+"""
+    Arithmetic - DONE
+    Assignment -  DONE
+    Comparison - DONE
+    Logical - NOT DONE
+    Identity -  NOT DONE
+    Membership - NOT DONE
+
+    --------
+    Bitwise - system programming (deal 1 & 0)
+"""
+
+"""
+    ARITHMETIC OPERATORS
+    - addition(+)
+    - subtraction(-)
+    - division(/)
+    - multiplication(*)
+
+    ----------
+    - modulus(%) - DONE
+    - exponentiation(**) - DONE
+    - floor division(//)  - DONE
+"""
+
+"""
+    COMPARISON
+    >, <, <=, >=, ==
+"""
+
+"""
+    LOGICAL -> On boolean expressions or predicates(statement that result to True or False)
+    and | or | not
+
+    P = it is raining
+    Q = it is windy
+
+    NOTE: And result will only be True if and only if both predicate are True else False
+
+    >> AND OPERATOR <<
+    R = Go out with umbrella
+    NOTE: True = 1, False = 0
+
+    P   Q   =>  R
+    1   0       0
+    0   1       0
+    1   1       1
+    0   0       0
+
+    >> OR OPERATOR <<
+    Note: OR result will always be True except both predicate are False
+
+    P   Q   =>  R
+    1   1       1
+    0   1       1
+    1   0       1
+    0   0       0
+
+    >> NOT OPERATOR <<
+
+    not 1 = 0
+    not 0 = 1
+
+    NOTE: Logical Precedence
+    BODMAS
+
+    0. (<Rule apply>)
+    1. NOT
+    2. AND
+    3. OR
+"""
+isRaining = True
+isWindy = False
+isDark = False
+
+print(isWindy and not not (not isRaining or isDark))
+
+"""
+    False and False = False
+"""
+""" 
+    `Javascript`
+    == -> checks for value
+    === -> checks for value and type
+"""
+
+# => FLOOR DIVISION -> 
+number_one = 5
+number_two = 3
+
+# 5 * 5 * 5 = 25 * 5 = 125
+
+# 2 * 2 * 2 * 2 * 2 = 4 * 4 * 2 = 16 * 2 = 32
+
+result = number_one ** number_two # 1.3333
+# int(1.3333) = 1
+
+print(result)
+# => MODULUS -> returns remainder
+# NOTE: 7 / 3 = 2 r modulus(1)
+# 11 / 4 = 2 r modulus(3)
+
+# NOTE: position matters
+# number_one = 3
+# number_two = 4
+
+# result = number_one ** number_two # 2.3333
+
+# # 3 ** 4 = 3 * 3 * 3 * 3 = 9 * 9 = 81
+
+# print(result)
+
+# => EXPONENTIATION -> n to the power of (n)
+# 2 ^ 3  = 2 * 2 * 2 = 8
+# 4 ** 3 = 64
+
+
 
 # print("I am working")
 
@@ -132,10 +249,3 @@ myname = "Augustine"
 # augustine_age = 21 # "21"
 
 # print("Augustine is " + str(augustine_age) + " years old") # Augustine is 21 years old
-
-number_one = input("Enter number: ")
-number_two = 3
-
-result = number_one * number_two
-
-print(result)
